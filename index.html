@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index con Navbar</title>
-    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="style/index.css" />
   </head>
   <body>
     <nav>
       <h1>Mi Sitio Web</h1>
-      <button onclick="cargar('../js/cuadrado.html')">Cuadrado</button>
-      <button onclick="cargar('../js/calculadora.html')">Calculadora</button>
-      <button onclick="cargar('../js/nomina.html')">Nomina</button>
-      <button onclick="cargar('../js/sobre_el_programador.html')">
+      <button onclick="cargar('js/cuadrado.html')">Cuadrado</button>
+      <button onclick="cargar('js/calculadora.html')">Calculadora</button>
+      <button onclick="cargar('js/nomina.html')">Nomina</button>
+      <button onclick="cargar('js/sobre_el_programador.html')">
         Sobre el Programador
       </button>
       <button onclick="cerrarPagina()">Cerrar Sesion</button>
@@ -28,9 +28,10 @@
   function cargar(pagina) {
     document.getElementById("pantalla").src = pagina;
   }
-  document.getElementById("pantalla").src = "../js/cuadrado.html";
+  document.getElementById("pantalla").src = "js/cuadrado.html";
 
   function cerrarPagina() {
     alert("Sesion cerrada");
   }
 </script>
+
